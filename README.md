@@ -22,7 +22,7 @@
 Clone the repository to your local machine:
 
 ```sh
-git clone https://github.com/yourusername/mypromise.git
+git clone https://github.com/MoskKir/MyPromise
 cd mypromise
 ```
 
