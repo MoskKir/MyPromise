@@ -124,7 +124,6 @@ export default class MyPromise {
   }
 }
 
-// Почему resolvePromise находиться не внутри класса MyPromise
 function resolvePromise(x, resolve, reject) {
   if (x === this) {
     return reject(new TypeError('Chaining cycle detected for promise'));
@@ -135,11 +134,3 @@ function resolvePromise(x, resolve, reject) {
     resolve(x);
   }
 }
-
-const myPromise = new MyPromise((resolve, reject) => {
-  resolve('success MyPromise')
-}).then((result) => {
-  console.log('xxx: ', result);
-})
-
-console.log(myPromise)
